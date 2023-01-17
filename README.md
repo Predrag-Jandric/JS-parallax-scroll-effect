@@ -1,14 +1,14 @@
-# 🛠 JS - progress bar
+# 🛠 JS parallax  scroll effect
 
-# 🔗 [Live Preview](https://magical-starship-daa3da.netlify.app/)
-![Design preview](./preview.gif)
+# 🔗 [Live Preview]()
+![Design preview](./)
 
 ## Welcome! 👋
 
-- About this project: main goal here for me was to understand how JS can be done using functions, conditional statements, increments. When the button is clicked, a gradient will fill the progress bar until 100%.
+- about
 
 ### Languages and features 👨‍💻 
 
-- JS: functions, conditional statements
+- JS: 
 
 Thanks for checking out my projects.

@@ -10,7 +10,7 @@ body {
   background: #0a2a43;
 }
 
-section {
+header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,7 +21,7 @@ section {
   height: 100vh;
   overflow: hidden;
 }
-section:before {
+header:before {
   content: "";
   position: absolute;
   top: auto;
@@ -29,11 +29,11 @@ section:before {
   bottom: 0;
   left: auto;
   width: 100%;
-  height: 100%;
-  background: linear-gradient(to top #0a2a43, trasparent);
-  z-index: 1000;
+  height: 15%;
+  background: linear-gradient(transparent, #0a2a43);
+  z-index: 100;
 }
-section:after {
+header:after {
   content: "";
   position: absolute;
   top: 0;
@@ -43,10 +43,10 @@ section:after {
   width: 100%;
   height: 100%;
   background: #0a2a43;
-  z-index: 100;
+  z-index: 99;
   mix-blend-mode: exclusion;
 }
-section img {
+header img {
   position: absolute;
   top: 0;
   right: auto;
@@ -56,12 +56,39 @@ section img {
   height: 100%;
   object-fit: cover;
 }
-section .text {
+header .header__text {
   position: relative;
   color: white;
   font-size: 5rem;
   z-index: 1;
   text-align: center;
+}
+header #road {
+  z-index: 2;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  gap: 2rem;
+  margin: 3rem auto;
+  text-align: center;
+  padding: 2rem;
+  color: whitesmoke;
+}
+@media (min-width: 1200px) {
+  .content {
+    width: 60%;
+  }
+}
+.content h2 {
+  font-size: 2rem;
+}
+.content p {
+  line-height: 1.7rem;
+  font-size: 1.05rem;
 }
 
 /*# sourceMappingURL=style.css.map */

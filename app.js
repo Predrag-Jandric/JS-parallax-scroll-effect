@@ -1,11 +1,16 @@
-document.addEventListener("mousemove", parallax);
-function parallax(e){
-  document.querySelectorAll(".object").forEach(function(move){
 
-    var moving_value = move.getAttribute("data-value");
-    var x = (e.clientX * moving_value) / 250;
-    var y = (e.clientY * moving_value) / 250;
+let bg = document.getElementById('bg')
+let moon = document.getElementById('moon')
+let mountain = document.getElementById('mountain')
+let road = document.getElementById('road')
+let text = document.getElementById('text')
 
-    move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
-  });
-}
+window.addEventListener('scroll', function(){
+  let value = window.scrollY
+
+  bg.style.top = value * 0.5 + 'px'
+  moon.style.left = -value * 0.5 + 'px'
+  mountain.style.top = -value * 0.15 + 'px'
+  road.style.top = value * 0.15 + 'px'
+  text.style.top = value * 1 + 'px'
+})
